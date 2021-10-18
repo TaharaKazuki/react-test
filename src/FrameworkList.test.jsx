@@ -23,5 +23,6 @@ describe('Rendering the list with the props', () => {
 
     const dummyItems = dummyData.map(({ item }) => item)
     expect(frameworkItems).toEqual(dummyItems)
+    expect(screen.queryByText('No data')).toBeNull()
   })
 })
